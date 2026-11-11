@@ -60,6 +60,19 @@ export default async function RootLayout({
 
   return (
     <html lang={localeTags[locale].html} className={archivo.variable}>
+      <head>
+        {/*
+          Automatische Übersetzung im Browser (z. B. Google Translate) ersetzt
+          Textknoten. React stürzt danach beim nächsten Update ab
+          (removeChild/insertBefore auf fremden Knoten). Dieser Schutz fängt
+          genau diesen Fall ab, statt die Fehlerseite zu zeigen.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){if(typeof Node!=="function"||!Node.prototype)return;var r=Node.prototype.removeChild;Node.prototype.removeChild=function(c){if(c&&c.parentNode!==this){return c}return r.apply(this,arguments)};var i=Node.prototype.insertBefore;Node.prototype.insertBefore=function(n,ref){if(ref&&ref.parentNode!==this){return n}return i.apply(this,arguments)}})();`,
+          }}
+        />
+      </head>
       <body>
         <a
           href="#main"

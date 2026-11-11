@@ -50,7 +50,13 @@ function smtpTransporter(): Transporter {
   const port = Number.parseInt(env("SMTP_PORT") ?? "587", 10);
   const secureSetting = env("SMTP_SECURE");
   const user = env("SMTP_USER");
-  const pass = env("SMTP_PASS");
+  const host = env("SMTP_HOST") ?? "";
+  // Google zeigt App-Passwörter in Vierergruppen mit Leerzeichen an
+  // ("abcd efgh ijkl mnop"). Beim Kopieren landen die Leerzeichen oft mit im Feld.
+  const rawPass = env("SMTP_PASS");
+  const pass = /gmail\.com|googlemail\.com/i.test(host)
+    ? rawPass?.replace(/\s+/g, "")
+    : rawPass;
 
   smtp = nodemailer.createTransport({
     host: env("SMTP_HOST"),
