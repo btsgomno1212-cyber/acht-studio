@@ -19,7 +19,7 @@ export const de = {
     openMenu: "Menü öffnen",
     closeMenu: "Menü schließen",
     language: "Sprache",
-    switchTo: "Switch to English",
+    switchTo: "Sprache wechseln",
   },
 
   nav: {
@@ -421,7 +421,7 @@ export const de = {
         text: "Nachvollziehbare Angebote, ehrliche Einschätzungen und Antworten ohne Fachchinesisch.",
       },
       {
-        title: "Deutsch und Englisch",
+        title: "Deutsch, Englisch und Russisch",
         text: "Wir arbeiten mit Unternehmen in Deutschland, Europa und darüber hinaus, remote oder vor Ort.",
       },
     ],
@@ -452,7 +452,7 @@ export const de = {
       },
       {
         q: "Arbeiten Sie auch mit Kunden außerhalb Deutschlands?",
-        a: "Ja. Wir arbeiten remote mit Unternehmen in ganz Europa und darüber hinaus, auf Deutsch und auf Englisch.",
+        a: "Ja. Wir arbeiten remote mit Unternehmen in ganz Europa und darüber hinaus, auf Deutsch, Englisch und Russisch.",
       },
       {
         q: "Wem gehören die fertigen Dateien?",

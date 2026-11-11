@@ -15,7 +15,7 @@ export function studioSchema(locale: Locale, dict: Dictionary) {
     description: dict.meta.description,
     email: siteConfig.email,
     inLanguage: localeTags[locale].html,
-    knowsLanguage: ["de", "en"],
+    knowsLanguage: ["de", "en", "ru"],
     areaServed: ["DE", "AT", "CH", "Europe"],
     ...(siteConfig.social.length > 0
       ? { sameAs: siteConfig.social.map((profile) => profile.href) }

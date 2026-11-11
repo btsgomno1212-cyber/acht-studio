@@ -14,7 +14,11 @@ const escapeHtml = (value: string) =>
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
 
-const LANGUAGE: Record<Locale, string> = { de: "Deutsch", en: "Englisch" };
+const LANGUAGE: Record<Locale, string> = {
+  de: "Deutsch",
+  en: "Englisch",
+  ru: "Russisch",
+};
 
 /**
  * Baut die Benachrichtigung für das Studio. Die Bezeichnungen sind immer

@@ -9,7 +9,7 @@ import { hasWhatsapp, siteConfig } from "@/config/site";
 import { isLocale, locales, localeTags } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { pageMetadata } from "@/lib/seo";
-import { archivo } from "../fonts";
+import { archivo, cyrillic } from "../fonts";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -59,7 +59,10 @@ export default async function RootLayout({
   const dict = getDictionary(locale);
 
   return (
-    <html lang={localeTags[locale].html} className={archivo.variable}>
+    <html
+      lang={localeTags[locale].html}
+      className={`${archivo.variable} ${cyrillic.variable}`}
+    >
       <head>
         {/*
           Automatische Übersetzung im Browser (z. B. Google Translate) ersetzt

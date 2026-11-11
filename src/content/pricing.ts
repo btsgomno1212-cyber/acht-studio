@@ -55,17 +55,17 @@ export const pricingGroups: PricingGroup[] = [
   {
     service: "3d",
     packages: [
-      { id: "basic-3d", priceFrom: null }, // TODO: Preis eintragen
-      { id: "professional-3d", priceFrom: null }, // TODO: Preis eintragen
+      { id: "basic-3d", priceFrom: 49 },
+      { id: "professional-3d", priceFrom: 149 },
       { id: "premium-cgi", priceFrom: null, custom: true },
     ],
   },
   {
     service: "graphic",
     packages: [
-      { id: "logo-design", priceFrom: null }, // TODO: Preis eintragen
-      { id: "brand-identity", priceFrom: null }, // TODO: Preis eintragen
-      { id: "complete-branding", priceFrom: null, custom: true },
+      { id: "logo-design", priceFrom: 59 },
+      { id: "brand-identity", priceFrom: 199 },
+      { id: "complete-branding", priceFrom: 399 },
     ],
   },
 ];

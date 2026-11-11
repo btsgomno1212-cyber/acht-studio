@@ -17,7 +17,7 @@ export const en: Dictionary = {
     openMenu: "Open menu",
     closeMenu: "Close menu",
     language: "Language",
-    switchTo: "Auf Deutsch wechseln",
+    switchTo: "Switch language",
   },
 
   nav: {
@@ -414,7 +414,7 @@ export const en: Dictionary = {
         text: "Quotes you can follow, honest assessments and answers without jargon.",
       },
       {
-        title: "German and English",
+        title: "German, English and Russian",
         text: "We work with companies in Germany, Europe and beyond, remotely or on site.",
       },
     ],
@@ -445,7 +445,7 @@ export const en: Dictionary = {
       },
       {
         q: "Do you work with clients outside Germany?",
-        a: "Yes. We work remotely with companies across Europe and beyond, in German and in English.",
+        a: "Yes. We work remotely with companies across Europe and beyond, in German, English and Russian.",
       },
       {
         q: "Who owns the finished files?",

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { locales, type Locale } from "@/i18n/config";
+import { localeNames, locales, type Locale } from "@/i18n/config";
 import { cn } from "@/lib/cn";
 
 /** Sprachkürzel am Anfang des Pfads, z. B. "/de" in "/de/impressum". */
@@ -45,8 +45,10 @@ export function LanguageSwitcher({
             hrefLang={code}
             lang={code}
             aria-current={active ? "true" : undefined}
-            aria-label={active ? undefined : switchTo}
-            title={active ? undefined : switchTo}
+            aria-label={
+              active ? undefined : `${switchTo}: ${localeNames[code]}`
+            }
+            title={active ? undefined : localeNames[code]}
             scroll={false}
             className={cn(
               "rounded-full px-2.5 py-1.5 leading-none uppercase transition-colors duration-300",

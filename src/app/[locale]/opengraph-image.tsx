@@ -21,15 +21,25 @@ export const contentType = "image/png";
  */
 async function loadAssets() {
   "use cache";
-  const [condensed, regular, shapes] = await Promise.all([
-    readFile(
-      join(process.cwd(), "src/fonts/Archivo-Condensed-ExtraBold.ttf"),
-      "base64",
-    ),
-    readFile(join(process.cwd(), "src/fonts/Archivo-Regular.ttf"), "base64"),
-    readFile(join(process.cwd(), "src/assets/og-shapes.png"), "base64"),
-  ]);
-  return { condensed, regular, shapes };
+  const [condensed, regular, shapes, condensedCyr, regularCyr] =
+    await Promise.all([
+      readFile(
+        join(process.cwd(), "src/fonts/Archivo-Condensed-ExtraBold.ttf"),
+        "base64",
+      ),
+      readFile(join(process.cwd(), "src/fonts/Archivo-Regular.ttf"), "base64"),
+      readFile(join(process.cwd(), "src/assets/og-shapes.png"), "base64"),
+      // Kyrillische Zeichen für die russische Fassung (Archivo hat keine).
+      readFile(
+        join(process.cwd(), "src/fonts/RobotoFlex-Condensed-Cyrillic.ttf"),
+        "base64",
+      ),
+      readFile(
+        join(process.cwd(), "src/fonts/RobotoFlex-Regular-Cyrillic.ttf"),
+        "base64",
+      ),
+    ]);
+  return { condensed, regular, shapes, condensedCyr, regularCyr };
 }
 
 const toBuffer = (base64: string) => Buffer.from(base64, "base64");
@@ -59,7 +69,7 @@ export default async function OpenGraphImage({
         height: "100%",
         background: "#080808",
         color: "#ffffff",
-        fontFamily: "Archivo",
+        fontFamily: "Archivo, Cyrillic",
       }}
     >
       {/* eslint-disable-next-line jsx-a11y/alt-text */}
@@ -93,7 +103,7 @@ export default async function OpenGraphImage({
           </svg>
           <span
             style={{
-              fontFamily: "Archivo Condensed",
+              fontFamily: "Archivo Condensed, Cyrillic Condensed",
               fontSize: 50,
               lineHeight: 1,
               letterSpacing: 1,
@@ -108,7 +118,7 @@ export default async function OpenGraphImage({
             style={{
               display: "flex",
               flexDirection: "column",
-              fontFamily: "Archivo Condensed",
+              fontFamily: "Archivo Condensed, Cyrillic Condensed",
               fontSize: 122,
               lineHeight: 0.92,
             }}
@@ -135,6 +145,18 @@ export default async function OpenGraphImage({
         {
           name: "Archivo",
           data: toBuffer(assets.regular),
+          weight: 400,
+          style: "normal",
+        },
+        {
+          name: "Cyrillic Condensed",
+          data: toBuffer(assets.condensedCyr),
+          weight: 800,
+          style: "normal",
+        },
+        {
+          name: "Cyrillic",
+          data: toBuffer(assets.regularCyr),
           weight: 400,
           style: "normal",
         },

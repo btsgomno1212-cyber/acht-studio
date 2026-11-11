@@ -21,7 +21,10 @@
   --color-danger: #ff7a6b;
 
   --font-sans:
-    var(--font-archivo), "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* Kyrillik zuerst: Die Schrift deckt nur kyrillische Zeichen ab, alles
+       andere fällt durch zu Archivo. */
+    var(--font-cyrillic), var(--font-archivo), "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
 
   --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-swift: cubic-bezier(0.3, 0.7, 0.2, 1);
@@ -343,4 +346,9 @@ html.lenis body {
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Russische Wörter sind länger ("впечатления") – Hero-Titel etwas kleiner. */
+html:lang(ru) [data-hero-title] {
+  font-size: clamp(3.4rem, 1.8rem + 8vw, 11rem);
 }

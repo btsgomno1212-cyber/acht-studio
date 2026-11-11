@@ -13,6 +13,11 @@ const formats: Record<Locale, Intl.NumberFormat> = {
     currency: "EUR",
     maximumFractionDigits: 0,
   }),
+  ru: new Intl.NumberFormat("ru-RU", {
+    style: "currency",
+    currency: "EUR",
+    maximumFractionDigits: 0,
+  }),
 };
 
 export type PriceLabel =
