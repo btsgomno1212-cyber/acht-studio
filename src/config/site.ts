@@ -28,7 +28,7 @@ export const siteConfig = {
    * und ohne führende Nullen – z. B. "4915112345678".
    * Leer lassen: Alle WhatsApp-Links und der schwebende Button werden ausgeblendet.
    */
-  whatsapp: "",
+  whatsapp: "4917663015887",
 
   /**
    * Basis-URL der Website ohne Slash am Ende. Wird für Canonical-Links,
@@ -52,10 +52,10 @@ export const siteConfig = {
     company: "ACHT – Nazar Honcharov",
     /** Inhaber oder Geschäftsführung */
     owner: "Nazar Honcharov",
-    /** TODO: Straße und Hausnummer */
-    street: "",
-    /** Postleitzahl und Ort – TODO: Postleitzahl ergänzen, z. B. "06108 Halle (Saale)" */
-    city: "Halle (Saale)",
+    /** Straße und Hausnummer */
+    street: "Freiimfelder Str. 95",
+    /** Postleitzahl und Ort */
+    city: "06112 Halle (Saale)",
     country: "Deutschland",
     /** Optional, z. B. "+49 151 12345678" */
     phone: "",
