@@ -616,15 +616,16 @@ export const de = {
         {
           title: "Hosting",
           body: [
-            "Diese Website wird bei einem externen Anbieter gehostet [Anbieter eintragen, z. B. Vercel Inc.]. Beim Aufruf der Seiten verarbeitet der Anbieter technisch notwendige Daten wie IP-Adresse, Zeitpunkt des Zugriffs und Browser-Informationen in Server-Protokollen.",
+            "Diese Website wird bei Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA gehostet. Beim Aufruf der Seiten verarbeitet Vercel technisch notwendige Daten wie IP-Adresse, Zeitpunkt des Zugriffs und Browser-Informationen in Server-Protokollen.",
             "Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt im sicheren und stabilen Betrieb der Website.",
+            "Dabei können Daten in die USA übertragen werden. Vercel ist nach dem EU-U.S. Data Privacy Framework zertifiziert; die Übermittlung stützt sich auf den Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO). Weitere Informationen: https://vercel.com/legal/privacy-policy",
           ],
         },
         {
           title: "Anfrageformular",
           body: [
             "Wenn Sie uns über das Formular schreiben, verarbeiten wir Ihre Angaben: Name, Unternehmen, E-Mail-Adresse, gewählte Leistung, Budget, Zeitrahmen und Ihre Nachricht. Wir verwenden diese Daten ausschließlich, um Ihre Anfrage zu bearbeiten.",
-            "Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen). Die Anfrage wird uns per E-Mail über einen Versanddienstleister zugestellt [Dienstleister eintragen].",
+            "Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen). Die Anfrage wird uns per E-Mail zugestellt. Für den Versand und das Postfach nutzen wir Gmail der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Dabei ist eine Übermittlung an Google LLC in den USA möglich; Google ist nach dem EU-U.S. Data Privacy Framework zertifiziert. Weitere Informationen: https://policies.google.com/privacy",
             "Wir löschen die Daten, sobald sie für die Bearbeitung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.",
           ],
         },

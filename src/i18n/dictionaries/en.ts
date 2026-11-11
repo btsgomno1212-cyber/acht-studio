@@ -609,15 +609,16 @@ export const en: Dictionary = {
         {
           title: "Hosting",
           body: [
-            "This website is hosted by an external provider [add provider, e.g. Vercel Inc.]. When pages are requested, the provider processes technically necessary data such as IP address, time of access and browser information in server logs.",
+            "This website is hosted by Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA. When pages are requested, Vercel processes technically necessary data such as IP address, time of access and browser information in server logs.",
             "The legal basis is Art. 6 (1) (f) GDPR. Our legitimate interest is the secure and stable operation of the website.",
+            "Data may be transferred to the USA in the process. Vercel is certified under the EU-U.S. Data Privacy Framework; the transfer is based on the European Commission's adequacy decision (Art. 45 GDPR). More information: https://vercel.com/legal/privacy-policy",
           ],
         },
         {
           title: "Enquiry form",
           body: [
             "When you write to us using the form, we process the details you provide: name, company, email address, selected service, budget, timeline and your message. We use this data only to handle your enquiry.",
-            "The legal basis is Art. 6 (1) (b) GDPR (steps prior to entering into a contract). The enquiry is delivered to us by email through a delivery service provider [add provider].",
+            "The legal basis is Art. 6 (1) (b) GDPR (steps prior to entering into a contract). The enquiry is delivered to us by email. For sending and for our mailbox we use Gmail, provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Data may be transferred to Google LLC in the USA; Google is certified under the EU-U.S. Data Privacy Framework. More information: https://policies.google.com/privacy",
             "We delete the data as soon as it is no longer required for handling your enquiry and no statutory retention periods apply.",
           ],
         },
