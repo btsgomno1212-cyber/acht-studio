@@ -49,13 +49,13 @@ export const siteConfig = {
    */
   legal: {
     /** Firmenname oder Vor- und Nachname, z. B. "ACHT Studio – Max Mustermann" */
-    company: "ACHT – Nazar Honcharov",
+    company: "ACHT – Nazar Busines",
     /** Inhaber oder Geschäftsführung */
-    owner: "Nazar Honcharov",
+    owner: "Nazar Busines",
     /** Straße und Hausnummer */
-    street: "Freiimfelder Str. 95",
+    street: "Mittelstraße 17",
     /** Postleitzahl und Ort */
-    city: "06112 Halle (Saale)",
+    city: "06108 Halle (Saale)",
     country: "Deutschland",
     /** Optional, z. B. "+49 151 12345678" */
     phone: "",
